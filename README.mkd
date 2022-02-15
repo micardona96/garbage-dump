@@ -1,0 +1,47 @@
+### 🗑 El problema de la ubicacion de un relleno sanitario
+
+La region EcoReg tiene un problema serio de
+deposito de basuras, y ha decidido construir un nuevo relleno dentro de sus fronteras. Como es natural,
+cada ciudad dentro de la region esta en alerta y presionando para que el sitio no quede cerca de su ciudad. Por tal razon, los administradores de la region
+quieren encontrar un sitio que quede lo mas lejos posible de la ciudad mas cercana. Los administradores
+han decidido medir la distancia entre dos ciudades
+con la metrica Manhattan la cual define la distancia
+entre dos puntos como la distancia en el eje X mas la
+distancia en el eje Y (ver figura).
+La region se representa como un cuadrado perfecto
+de Nkm por Nkm. Identificamos la esquina al suroccidente de la region con la posicion (0,0). En este
+sistema, las ciudades estan situadas sobre las intersecciones.
+
+## 🎲 Modelamiento e Implementacion
+
+Usted como ingeniero ha sido contratado por la
+region y debe:
+
+- (30pts) Proponer un modelo generico para solucionar el problema de la ubicacion del relleno
+  sanitario. El modelo debe ser incluido en formato
+  pdf y debe contener: parametros, variables, restricciones, funcion objetivo. El modelo debe utilizar notacion formal para que soporte cualquier
+  instancia con la entrada definida en la Seccion 3.
+- (5pts) Generar 10 instancias para retar a otros
+  ingenieros.
+- (15pts) Implementar el modelo generico en MiniZinc (Relleno.mzn).
+- (15pts) Incluir una tabla con pruebas realizadas
+  sobre las instancias que se proveen con el proyecto y las 10 instancias creadas por su grupo
+  de trabajo. Realice un analisis sobre los resultados obtenidos (incluya el analisis en el informe
+  con el modelo).
+- (25pts) Desarrollar una interfaz grafica en un
+  lenguaje de programacion (el de su predileccion)
+  que permita configurar una entrada para el problema (la entrada se debera convertirse a formato dzn para poder ser ejecutada por el modelo
+  cumpliendo con las caracterısticas de la entrada
+  definida en la Seccion 3) y visualizar la salida.
+  Esta interfaz junto con el modelo serıa el entregable para la region y sera utilizado por algun
+  operario. La interfaz debe incluir un boton que
+  al presionarlo:
+
+* Cree un archivo Datos.dzn con los datos
+  proporcionados en la interfaz
+* Ejecute el modelo generico Relleno.mzn
+  sobre los datos proporcionados
+* Despliegue los resultados de la solucion
+
+- Incluya los archivos fuente de su implementacion
+  grafica en un directorio llamado RellenoGUIFuentes
